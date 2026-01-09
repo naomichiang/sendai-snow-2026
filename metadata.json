@@ -1,0 +1,7 @@
+{
+  "name": "仙台雪季 2026 旅遊手冊",
+  "description": "一款專為 2026 仙台雪季旅行設計的日系風格單頁 Web App，提供行程規劃、天氣概況、打包清單與旅遊指南。",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
