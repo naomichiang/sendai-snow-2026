@@ -74,22 +74,22 @@ const PackingList: React.FC = () => {
             </button>
           ))}
         </div>
-        <div className="flex gap-2">
+        <div className="flex gap-2 items-center"> {/* 💡 增加 items-center 確保高度對齊 */} 
           <input
             type="text"
             value={newItemName}
             onChange={(e) => setNewItemName(e.target.value)}
             onKeyPress={(e) => e.key === 'Enter' && addItem()}
             placeholder="自行新增項目..."
-            className="flex-1 bg-[#F5EFEF] border border-[#E0E0E0] rounded-xl px-4 py-2.5 text-xl text-[#3E2723] placeholder-[#9E9E9E] focus:outline-none focus:ring-2 focus:ring-[#A1887F] font-medium"
+            className="flex-1 min-w-0 bg-[#F5EFEF] border border-[#E0E0E0] rounded-xl px-4 h-14 text-base text-[#3E2723] placeholder-[#9E9E9E] focus:outline-none focus:ring-2 focus:ring-[#A1887F] font-semibold"
           />
           <button
             onClick={addItem}
-            className="bg-[#3E2723] flex-shrink-0 text-white w-14 h-14 rounded-xl flex items-center justify-center font-black text-2xl shadow-lg active:scale-95 transition-all"
+            className="flex-shrink-0 bg-[#3E2723] text-white w-14 h-14 rounded-xl flex items-center justify-center font-black text-md shadow-lg active:scale-95 transition-all"
           >
             +
           </button>
-        </div>
+        </div>  
       </div>
 
       {/* 分類清單 */}
