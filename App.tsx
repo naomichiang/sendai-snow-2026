@@ -12,9 +12,9 @@ const App: React.FC = () => {
   const currentDayWeather = typeof selectedDay === 'number' ? WEATHER_DATA[selectedDay] : null;
 
   return (
-    <div className="max-w-md mx-auto bg-[#8D7B77] min-h-screen relative pb-32 transition-colors duration-500 overflow-x-hidden">
+    <div className="max-w-md mx-auto bg-[#8D7B77]/70 min-h-screen relative pb-32 transition-colors duration-500 overflow-x-hidden">
       {/* Header - Tightened */}
-      <header className="px-5 py-5 pt-10 bg-[#3E2723] text-[#F8F9FA] rounded-b-[2rem] shadow-xl border-b border-black/10">
+      <header className="px-5 py-5 pt-10 bg-[#3E2723]/80 text-[#F8F9FA] rounded-b-[2rem] shadow-xl border-b border-black/10">
         <div className="flex justify-between items-end">
           <div>
             <p className="text-[12px] opacity-60 mb-2 tracking-[0.3em] font-black text-[#D7CCC8]">SENDAI WINTER 2026</p>
@@ -35,7 +35,7 @@ const App: React.FC = () => {
             <div className="bg-white rounded-[1.5rem] p-4 shadow-md border border-white/40 mb-3">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <div className="w-14 h-14 bg-[#F5EFEF] rounded-xl flex items-center justify-center text-3xl shadow-inner">❄️</div>
+                  <div className="w-14 h-14 bg-[#F5EFEF] rounded-xl flex items-center justify-center text-2xl shadow-inner">❄️</div>
                   <div>
                     <h2 className="text-xl font-black text-[#3E2723] leading-none">{currentDay.location}</h2>
                     <div className="flex gap-1.5 mt-1.5">
@@ -57,7 +57,7 @@ const App: React.FC = () => {
                 <div key={i} className={`bg-white rounded-[2rem] p-5 shadow-sm border border-white/20 transition-all active:scale-[0.99] ${spot.category === '交通' ? 'bg-[#FDFCFB]' : ''}`}>
                   
                   {/* Header Row: Combined Time, Tags and Nav Button */}
-                  <div className="flex items-start justify-between mb-4 gap-2">
+                  <div className="flex items-start justify-between mb-3 gap-2">
                     <div className="flex flex-wrap gap-3 items-center">
                       {/* Time Badge - Moved here to eliminate left column */}
                       <span className={`text-[16px] font-black h-8 min-w-[64px] flex items-center justify-center px-2 rounded-2xl shadow-sm ${spot.category === '交通' ? 'bg-[#3E2723] text-white' : 'bg-[#EFEBE9] text-[#5D4037]'}`}>
@@ -83,7 +83,9 @@ const App: React.FC = () => {
                         className="flex-shrink-0 w-14 h-14 bg-red-800 text-white flex items-center justify-center rounded-2xl shadow-lg active:shadow-sm transition-all hover:bg-[#4E342E]"
                         aria-label="導航"
                       >
+                      <div className="transform scale-125">
                         <Icons.Map />
+                      </div> 
                       </a>
                     )}
                   </div>
