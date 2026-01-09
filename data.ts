@@ -60,14 +60,14 @@ export const ITINERARY_DATA: DayPlan[] = [
         mapUrl: 'https://maps.app.goo.gl/Md17Mpkyjznk1L9G7',
         emoji: '💨',
         highlightText: '這棟 5F 有3COINS+plus'
-      }
+      },
       {
         category: '購物',
         name: '3COINS+plus',
         desc: '5F 煮蛋器，3COINS+plus ヨドバシ仙台店',
         tags: ['必買'],
         mapUrl: 'https://maps.app.goo.gl/7atYGesoNCt4dYcb9',
-      }
+      },
     ],
     clothingAdvice: '長袖內衣 + 毛衣 + 防風外套',
     snowTip: '機場到市區多為室內通道，仙台市區積雪通常不深。'
