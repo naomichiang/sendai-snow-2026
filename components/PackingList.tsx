@@ -58,13 +58,13 @@ const PackingList: React.FC = () => {
     <div className="space-y-3">
       {/* 新增項目區 */}
       <div className="bg-white rounded-[1.5rem] p-4 shadow-md border border-white/40">
-        <h3 className="text-base font-black text-[#3E2723] mb-3 tracking-tight">行李清單</h3>
+        <h3 className="text-lg font-black text-[#3E2723] mb-3 tracking-tight">行李清單</h3>
         <div className="flex flex-wrap gap-2 mb-3">
           {categories.map(cat => (
             <button
               key={cat}
               onClick={() => setSelectedCategory(cat)}
-              className={`text-[11px] h-7 px-3 flex items-center justify-center rounded-lg font-black tracking-tight shadow-sm transition-all ${
+              className={`text-[12px] h-8 px-3 flex items-center justify-center rounded-lg font-semibold tracking-tight shadow-sm transition-all ${
                 selectedCategory === cat 
                   ? 'bg-[#3E2723] text-white' 
                   : 'bg-[#EFEBE9] text-[#5D4037]'
@@ -80,12 +80,12 @@ const PackingList: React.FC = () => {
             value={newItemName}
             onChange={(e) => setNewItemName(e.target.value)}
             onKeyPress={(e) => e.key === 'Enter' && addItem()}
-            placeholder="新增項目..."
-            className="flex-1 bg-[#F5EFEF] border border-[#E0E0E0] rounded-xl px-4 py-2.5 text-sm text-[#3E2723] placeholder-[#9E9E9E] focus:outline-none focus:ring-2 focus:ring-[#A1887F] font-medium"
+            placeholder="自行新增項目..."
+            className="flex-1 bg-[#F5EFEF] border border-[#E0E0E0] rounded-xl px-4 py-2.5 text-xl text-[#3E2723] placeholder-[#9E9E9E] focus:outline-none focus:ring-2 focus:ring-[#A1887F] font-medium"
           />
           <button
             onClick={addItem}
-            className="bg-[#3E2723] text-white w-11 h-11 rounded-xl flex items-center justify-center font-black text-lg shadow-lg active:scale-95 transition-all"
+            className="bg-[#3E2723] flex-shrink-0 text-white w-14 h-14 rounded-xl flex items-center justify-center font-black text-2xl shadow-lg active:scale-95 transition-all"
           >
             +
           </button>

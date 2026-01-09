@@ -60,7 +60,7 @@ const App: React.FC = () => {
                   <div className="flex items-start justify-between mb-4 gap-2">
                     <div className="flex flex-wrap gap-3 items-center">
                       {/* Time Badge - Moved here to eliminate left column */}
-                      <span className={`text-[18px] font-black h-9 min-w-[72px] flex items-center justify-center px-2 rounded-2xl shadow-sm ${spot.category === '交通' ? 'bg-[#3E2723] text-white' : 'bg-[#EFEBE9] text-[#5D4037]'}`}>
+                      <span className={`text-[16px] font-black h-8 min-w-[64px] flex items-center justify-center px-2 rounded-2xl shadow-sm ${spot.category === '交通' ? 'bg-[#3E2723] text-white' : 'bg-[#EFEBE9] text-[#5D4037]'}`}>
                         {spot.time || "--:--"}
                       </span>
                       
@@ -104,7 +104,7 @@ const App: React.FC = () => {
                     {spot.emoji && spot.highlightText && (
                       <div className="flex items-center gap-3 px-3 py-1.5 bg-[#FDF1EE] border border-[#F5E6E2] rounded-xl w-fit">
                         <span className="text-base leading-none">{spot.emoji}</span>
-                        <span className="text-[14px] font-medium text-[#8D7B77] uppercase tracking-widest">
+                        <span className="text-[14px] font-semibold text-[#8D7B77] uppercase tracking-widest">
                           {spot.highlightText}
                         </span>
                       </div>
@@ -142,7 +142,7 @@ const App: React.FC = () => {
                   onClick={() => setSelectedDay(idx)}
                   className={`flex-shrink-0 w-14 h-14 rounded-2xl flex flex-col items-center justify-center transition-all duration-300 ${
                     selectedDay === idx 
-                      ? 'bg-white text-[#3E2723] shadow-inner transform scale-110' 
+                      ? 'bg-white text-[#3E2723] shadow-inner transform scale-105' 
                       : 'bg-transparent text-white/40 hover:text-white/80'
                   }`}
                 >
