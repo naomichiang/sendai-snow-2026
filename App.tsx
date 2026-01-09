@@ -140,7 +140,7 @@ const App: React.FC = () => {
                 <button
                   key={idx}
                   onClick={() => setSelectedDay(idx)}
-                  className={`flex-shrink-0 w-14 h-20 rounded-2xl flex flex-col items-center justify-center transition-all duration-300 ${
+                  className={`flex-shrink-0 w-14 h-14 rounded-2xl flex flex-col items-center justify-center transition-all duration-300 ${
                     selectedDay === idx 
                       ? 'bg-white text-[#3E2723] shadow-inner transform scale-110' 
                       : 'bg-transparent text-white/40 hover:text-white/80'
@@ -152,7 +152,7 @@ const App: React.FC = () => {
               ))}
               <button
                 onClick={() => setSelectedDay('packing')}
-                className={`flex-shrink-0 w-14 h-20 rounded-2xl flex flex-col items-center justify-center transition-all duration-300 ${
+                className={`flex-shrink-0 w-14 h-14 rounded-2xl flex flex-col items-center justify-center transition-all duration-300 ${
                   selectedDay === 'packing'
                     ? 'bg-white text-[#3E2723] shadow-inner transform scale-105' 
                     : 'bg-transparent text-white/40 hover:text-white/80'
