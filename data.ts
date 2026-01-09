@@ -5,7 +5,7 @@ export const ITINERARY_DATA: DayPlan[] = [
   {
     day: 1,
     date: '2026/01/16',
-    location: '仙台市區',
+    location: '仙台逛街日',
     spots: [
       {
         time: '14:25',
@@ -30,7 +30,7 @@ export const ITINERARY_DATA: DayPlan[] = [
         name: '仙台東大都會大飯店',
         desc: '位置極佳！就在車站東口上方。check-in 後直接下樓開始玩',
         tags: ['必拍'],
-        mapUrl: 'https://maps.app.goo.gl/K9Z9Z9Z9',
+        mapUrl: 'https://maps.app.goo.gl/Gdbrawh7DpkqD91F9',
         emoji: '🏨',
         highlightText: '車站共構，連住兩晚'
       },
@@ -39,27 +39,34 @@ export const ITINERARY_DATA: DayPlan[] = [
         name: 'Montbell 仙台店',
         desc: '日本戶外品牌，各種機能型發熱衣 and 防風手套，是雪地活動的神隊友',
         tags: ['必買'],
-        mapUrl: 'https://maps.app.goo.gl/v9Z9Z9Z9',
+        mapUrl: 'https://maps.app.goo.gl/Xtq5xVwCjkoAv1zh9',
         emoji: '🧤',
         highlightText: '雪地裝備補給站'
       },
       {
-        category: '購物',
-        name: 'Chiikawa Land 仙台',
-        desc: '仙台PARCO本館 ８階，營業時間10:00–20:00',
-        tags: ['必買'],
-        mapUrl: 'https://maps.app.goo.gl/tvv4RQ9sBVwP3dkJ9',
-        emoji: '🐴',
-        highlightText: '綺綺許願馬年限定版'
+        category: '食物',
+        name: '牛舌晚餐',
+        desc: '仙台車站旁邊的碳烤牛舌店很多家',
+        tags: ['必吃'],
+        mapUrl: 'https://maps.app.goo.gl/Md17Mpkyjznk1L9G7',
+        emoji: '🍽️',
+        highlightText: '仙台名物-牛舌'
       },
       {
         category: '購物',
         name: 'Yodobashi 仙台',
         desc: 'ReFa吹風機、食物調理機',
         tags: ['必買'],
-        mapUrl: 'https://maps.app.goo.gl/W9Z9Z9Z9',
+        mapUrl: 'https://maps.app.goo.gl/Md17Mpkyjznk1L9G7',
         emoji: '💨',
-        highlightText: '想要ReFa吹風機'
+        highlightText: '這棟 5F 有3COINS+plus'
+      }
+      {
+        category: '購物',
+        name: '3COINS+plus',
+        desc: '5F 煮蛋器，3COINS+plus ヨドバシ仙台店',
+        tags: ['必買'],
+        mapUrl: 'https://maps.app.goo.gl/7atYGesoNCt4dYcb9',
       }
     ],
     clothingAdvice: '長袖內衣 + 毛衣 + 防風外套',
@@ -99,7 +106,7 @@ export const ITINERARY_DATA: DayPlan[] = [
         name: '藏王狐狸村🦊',
         desc: '上百隻肥嘟嘟的狐狸在雪地滾來滾去！入場費￥1500/人，那個毛絨絨的觸感～',
         tags: ['必拍'],
-        mapUrl: 'https://maps.app.goo.gl/Z9Z9Z9Z9',
+        mapUrl: 'https://maps.app.goo.gl/yqQxMuHcFvF5oygw5',
         emoji: '🦊',
         highlightText: '抱狐狸體驗必排隊'
       },
@@ -113,7 +120,7 @@ export const ITINERARY_DATA: DayPlan[] = [
       {
         category: '食物',
         name: '三陸牡蠣市場 Uminookite',
-        desc: '三陸地區的牡蠣以鮮甜肥美著稱。現開現吃的口感完全沒腥味，配上一杯在地清酒簡直是天堂。',
+        desc: '以鮮甜肥美的牡蠣著稱，現開現吃的口感完全沒腥味，配上一杯在地清酒簡直是天堂',
         tags: ['必吃'],
         mapUrl: 'https://maps.app.goo.gl/LMkfn3rPG4WXqwpq6',
         emoji: '🦪',
@@ -121,11 +128,21 @@ export const ITINERARY_DATA: DayPlan[] = [
       },
       {
         category: '購物',
-        name: 'S-PAL 仙台百貨',
-        desc: '地下街的甜點區、毛豆泥麻糬和各式蘋果派，買回飯店當宵夜剛剛好',
+        name: 'S-PAL 仙台本館百貨',
+        desc: 'FREAKS STORE 在東館3F,GU跟Uniqlo在5F',
         tags: ['必買'],
+        mapUrl: 'https://maps.app.goo.gl/G7ARqdHbbJWP7kDa9',
         emoji: '🍡',
         highlightText: '仙台名物＿各種毛豆口味',
+      },
+      {
+        category: '購物',
+        name: '仙台PARCO本館',
+        desc: '8樓有Chiikawa Land、Sanrio，3F有寶可夢中心',
+        tags: ['必買'],
+        mapUrl: 'https://maps.app.goo.gl/7uoUdatAbBQJ7jDk7',
+        emoji: '🐴',
+        highlightText: '綺綺許願馬年限定版'
       },
       {
         category: '景點',
@@ -148,7 +165,7 @@ export const ITINERARY_DATA: DayPlan[] = [
         name: '仙台朝市',
         desc: '被譽為仙台人的廚房，齊藤熟食店、生魚片、咖啡…',
         tags: ['必吃'],
-        mapUrl: 'https://maps.app.goo.gl/S9Z9Z9Z9',
+        mapUrl: 'https://maps.app.goo.gl/bsEBmhQ72AkokJ8a7',
         emoji: '🥣',
         highlightText: '海鮮丼CP值爆表'
       },
@@ -184,7 +201,7 @@ export const ITINERARY_DATA: DayPlan[] = [
         name: '銀山飯店 👘 古山閣',
         desc: '就是這家跨國匯款弄好久！希望很值得',
         tags: ['必拍'],
-        mapUrl: 'https://maps.app.goo.gl/U9Z9Z9Z9',
+        mapUrl: 'https://maps.app.goo.gl/YBFokW5QxatqprjPA',
         emoji: '👘',
         highlightText: '明治懷舊木雕之宿'
       },
@@ -198,7 +215,7 @@ export const ITINERARY_DATA: DayPlan[] = [
       },
       {
         category: '食物',
-        name: '溫泉飯點晚餐',
+        name: '溫泉飯店晚餐',
         desc: '溫泉飯店有提供晚餐，連住兩晚應該會不一樣',
         emoji: '🏮',
         highlightText: '一泊二食方案'
@@ -249,7 +266,7 @@ export const ITINERARY_DATA: DayPlan[] = [
         category: '飯店',
         name: 'Checkin放行李，五感之湯つるや',
         desc: '這家飯店的露天溫泉非常有特色。晚上泡湯時雪花落在頭上的感覺非常療癒',
-        mapUrl: 'https://maps.app.goo.gl/R9Z9Z9Z9',
+        mapUrl: 'https://maps.app.goo.gl/sKMzvqsxUmM6Dkeu6',
         emoji: '♨️',
         highlightText: '連住兩晚，雪中露天溫泉最高'
       },
@@ -261,9 +278,9 @@ export const ITINERARY_DATA: DayPlan[] = [
       {
         category: '景點',
         name: '🚠 藏王纜車 ➔ 樹冰',
-        desc: '前幾天先確認天氣並且當天上山前看即時影像，像巨型怪獸般的樹冰',
+        desc: '前幾天先確認天氣並且當天上山前看即時影像，像巨型怪獸般的樹冰，藏王纜車山麓站先搭到樹冰高原站－第二條纜車前往地藏山頂站？',
         tags: ['必拍'],
-        mapUrl: 'https://maps.app.goo.gl/P9Z9Z9Z9',
+        mapUrl: 'https://maps.app.goo.gl/aLwyShnX8zndEBnK8',
         emoji: '🚠',
         highlightText: '搶14:00或14:30上山的優先套票，末班車16:30'
       }
@@ -288,7 +305,7 @@ export const ITINERARY_DATA: DayPlan[] = [
         time: '08:30',
         category: '交通',
         name: '🚐 接駁車 ➔ Liza World',
-        desc: '早起出發！這個滑雪場的人相對少，雪質非常蓬鬆（Japow），非常適合我們練習。',
+        desc: '早起出發！這個滑雪場的人相對少，雪質蓬鬆，適合我們練習。',
         mapUrl: 'https://maps.app.goo.gl/L9Z9Z9Z9',
         emoji: '🏂',
         highlightText: '前往極品粉雪天堂'
@@ -305,8 +322,8 @@ export const ITINERARY_DATA: DayPlan[] = [
       {
         category: '活動',
         name: '♨️ 藏王溫泉街散策',
-        desc: '滑累了就去街上找家咖啡廳坐坐。這裡很多點足湯點，泡個幾分鐘就能讓腿部壓力瞬間消失',
-        mapUrl: 'https://maps.app.goo.gl/M9Z9Z9Z9',
+        desc: '下午媽媽累了要怎麼回山腳？這裡很多點足湯點，泡個幾分鐘就能讓腿部壓力瞬間消失',
+        mapUrl: 'https://maps.app.goo.gl/6xqUHRxfw57ZoVYy9',
         emoji: '🦶',
         highlightText: '足湯散策療癒雙腿'
       },
@@ -320,7 +337,7 @@ export const ITINERARY_DATA: DayPlan[] = [
       }
     ],
     clothingAdvice: '專業滑雪服組 + 護具',
-    snowTip: '滑雪場風大，建議佩戴護目鏡以保護眼睛。'
+    snowTip: '滑雪場風大，建議佩戴護目鏡以保護眼睛'
   },
   {
     day: 6,
@@ -338,7 +355,7 @@ export const ITINERARY_DATA: DayPlan[] = [
       {
         category: '購物',
         name: '山形市區逛街',
-        desc: 'S-PAL 裡面有各種山形限定的櫻桃和梨子點心。買幾個分送朋友，一定會大受好評。',
+        desc: 'S-PAL 裡面有各種山形限定的櫻桃和梨子點心。買幾個分送朋友，一定會大受好評',
         tags: ['必買'],
         emoji: '🍒',
         highlightText: '米澤牛 登起波 山形店'
@@ -375,6 +392,21 @@ export const ITINERARY_DATA: DayPlan[] = [
         tags: ['必買'],
         emoji: '🥤',
         highlightText: '毛豆奶昔最後一喝'
+      },
+      {
+        category: '購物',
+        name: 'AER 百貨',
+        desc: '最後一個上午。我們可以在車站附近的商店街慢慢走，買最後一隻毛豆奶昔，帶著滿足的心情前往機場',
+        tags: ['必買'],
+        emoji: '🌃',
+        highlightText: '31F免費觀景展望台 10:00〜20:00'
+      },
+      {
+        category: '食物',
+        name: '阿部蒲鉾店 本店',
+        desc: '仙台商店街的特色魚板小時',
+        emoji: '🏮',
+        highlightText: '炸葫蘆魚板'
       },
       {
         time: '14:30',
