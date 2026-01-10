@@ -7,7 +7,7 @@ interface FlightCardProps {
 
 const FlightCard: React.FC<FlightCardProps> = ({ flight }) => {
   return (
-    <div className="bg-white rounded-[2rem] p-5 shadow-sm border border-white/20 mb-3 overflow-hidden relative">
+    <div className="bg-white rounded-[2rem] px-5 py-4 shadow-sm border border-white/20 mb-3 overflow-hidden relative">
       {/* Header */}
       <div className="flex items-center mb-4">
         <div className="flex items-center gap-3">
