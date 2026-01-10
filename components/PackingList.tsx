@@ -1,20 +1,32 @@
 import React, { useState, useEffect } from 'react';
 import { PackingItem } from '../types';
 
+
+const categories: PackingItem['category'][] = ['隨身背包', '托運行李', '購物清單'];
+
+
 const PackingList: React.FC = () => {
   const [items, setItems] = useState<PackingItem[]>(() => {
     const saved = localStorage.getItem('sendai_packing');
     if (saved) return JSON.parse(saved);
     return [
-      { id: '1', name: '護照/機票', quantity: 1, completed: false, category: '隨身背包' },
+      { id: '1', name: '護照', quantity: 1, completed: false, category: '隨身背包' },
       { id: '2', name: '行動電源', quantity: 1, completed: false, category: '隨身背包' },
       { id: '3', name: '錢包/日幣', quantity: 1, completed: false, category: '隨身背包' },
-      { id: '4', name: '發熱衣', quantity: 3, completed: false, category: '托運' },
-      { id: '5', name: '暖暖包', quantity: 10, completed: false, category: '托運' },
-      { id: '6', name: '滑雪手套', quantity: 1, completed: false, category: '托運' },
-      { id: '7', name: '羽絨外套', quantity: 1, completed: false, category: '托運' },
-      { id: '8', name: '保溫瓶', quantity: 1, completed: false, category: '手提' },
-      { id: '9', name: '相機', quantity: 1, completed: false, category: '手提' },
+      { id: '4', name: '發熱衣', quantity: 3, completed: false, category: '托運行李' },
+      { id: '5', name: '暖暖包', quantity: 10, completed: false, category: '托運行李' },
+      { id: '6', name: '滑雪手套', quantity: 1, completed: false, category: '托運行李' },
+      { id: '7', name: '羽絨外套', quantity: 1, completed: false, category: '托運行李' },
+      { id: '8', name: '保溫瓶', quantity: 1, completed: false, category: '隨身背包' },
+      { id: '9', name: '相機', quantity: 1, completed: false, category: '隨身背包' },
+      { id: '10', name: '充電線/充電器', quantity: 1, completed: false, category: '托運行李' },
+      { id: '11', name: '化妝品/保養品', quantity: 1, completed: false, category: '托運行李' },
+      { id: '12', name: '墨鏡', quantity: 1, completed: false, category: '托運行李' },
+      { id: '13', name: 'Refa吹風機', quantity: 1, completed: false, category: '購物清單' },
+      { id: '14', name: 'recolte 無線萬用調理機(RCP-7)', quantity: 1, completed: false, category: '購物清單' },
+      { id: '15', name: 'Uniqlo 發熱衣、發熱襪', quantity: 1, completed: false, category: '購物清單' },
+      { id: '16', name: '3coins 煮蛋器', quantity: 1, completed: false, category: '購物清單' },
+      { id: '17', name: '綺綺許願馬年卡哇', quantity: 1, completed: false, category: '購物清單' },
     ];
   });
 
@@ -45,8 +57,6 @@ const PackingList: React.FC = () => {
     setItems([...items, newItem]);
     setNewItemName('');
   };
-
-  const categories: PackingItem['category'][] = ['隨身背包', '托運行李', '購物清單'];
 
   const categoryEmojis = {
     '隨身背包': '🎒',

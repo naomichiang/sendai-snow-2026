@@ -18,6 +18,7 @@ export interface DayPlan {
   date: string;
   location: string;
   spots: Spot[];
+  flights?: Flight[];
   clothingAdvice: string;
   snowTip: string;
 }
@@ -38,4 +39,16 @@ export interface PackingItem {
   quantity: number;
   completed: boolean;
   category: '隨身背包' | '手提行李' | '托運行李' | '購物清單';
+}
+
+export interface Flight {
+  type: '去程航班' | '回程航班';
+  date: string;
+  departureTime: string;
+  arrivalTime: string;
+  departure: string;
+  arrival: string;
+  flightNumber: string;
+  aircraft: string;
+  duration: string;
 }

@@ -6,6 +6,19 @@ export const ITINERARY_DATA: DayPlan[] = [
     day: 1,
     date: '2026/01/16',
     location: '仙台逛街日',
+    flights: [
+      {
+        type: '去程航班',
+        date: '1/16',
+        departureTime: '10:15',
+        arrivalTime: '14:25',
+        departure: 'TPE T2',
+        arrival: 'SDJ 仙台',
+        flightNumber: 'BR118',
+        aircraft: '長榮航空 BR118',
+        duration: '3h10m'
+      }
+    ],
     spots: [
       {
         time: '14:25',
@@ -27,9 +40,8 @@ export const ITINERARY_DATA: DayPlan[] = [
       },
       {
         category: '飯店',
-        name: '仙台東大都會大飯店',
+        name: 'Check in 仙台東大都會大飯店',
         desc: '位置極佳！就在車站東口上方。check-in 後直接下樓開始玩',
-        tags: ['必拍'],
         mapUrl: 'https://maps.app.goo.gl/Gdbrawh7DpkqD91F9',
         emoji: '🏨',
         highlightText: '車站共構，連住兩晚'
@@ -305,7 +317,7 @@ export const ITINERARY_DATA: DayPlan[] = [
         time: '08:30',
         category: '交通',
         name: '🚐 接駁車 ➔ Liza World',
-        desc: '早起出發！這個滑雪場的人相對少，雪質蓬鬆，適合我們練習。',
+        desc: '早起出發！這個滑雪場的人相對少，雪質蓬鬆，適合我們練習',
         mapUrl: 'https://maps.app.goo.gl/L9Z9Z9Z9',
         emoji: '🏂',
         highlightText: '前往極品粉雪天堂'
@@ -314,18 +326,18 @@ export const ITINERARY_DATA: DayPlan[] = [
         time: '09:30',
         category: '活動',
         name: '🏂 菜鳥級單板滑雪課',
-        desc: '教練會帶我們從基礎滑行開始，在雪地裡翻滾也是一種樂趣！課程: 9:30 - 12:30，餐廳: Order 10am〜4pm',
+        desc: '一對三教練課，在雪地裡翻滾也是一種樂趣！課程: 9:30 - 12:30，餐廳:10am〜4pm',
         tags: ['必拍'],
         emoji: '🎓',
-        highlightText: '下午可以留在滑雪場練習或回藏王溫泉街＆飯店'
+        highlightText: '下午留在滑雪場練習'
       },
       {
         category: '活動',
         name: '♨️ 藏王溫泉街散策',
-        desc: '下午媽媽累了要怎麼回山腳？這裡很多點足湯點，泡個幾分鐘就能讓腿部壓力瞬間消失',
+        desc: '很多點足湯點，泡個幾分鐘就能讓腿部壓力瞬間消失',
         mapUrl: 'https://maps.app.goo.gl/6xqUHRxfw57ZoVYy9',
         emoji: '🦶',
-        highlightText: '足湯散策療癒雙腿'
+        highlightText: 'Free足湯散策療癒'
       },
       {
         category: '食物',
@@ -384,27 +396,28 @@ export const ITINERARY_DATA: DayPlan[] = [
     day: 7,
     date: '2026/01/22',
     location: '仙台 - 回程',
+    
     spots: [
       {
         category: '購物',
         name: '仙台車站 ➔ 悠閒散步',
-        desc: '最後一個上午。我們可以在車站附近的商店街慢慢走，買最後一隻毛豆奶昔，帶著滿足的心情前往機場',
+        desc: '在車站附近的商店街慢慢走，買最後一隻毛豆奶昔，帶著滿足的心情前往機場',
         tags: ['必買'],
         emoji: '🥤',
         highlightText: '毛豆奶昔最後一喝'
       },
       {
-        category: '購物',
+        category: '景點',
         name: 'AER 百貨',
-        desc: '最後一個上午。我們可以在車站附近的商店街慢慢走，買最後一隻毛豆奶昔，帶著滿足的心情前往機場',
-        tags: ['必買'],
+        desc: '最後一個上午，車站附近的商店街走走，買最後一隻毛豆奶昔',
+        tags: ['必拍'],
         emoji: '🌃',
         highlightText: '31F免費觀景展望台 10:00〜20:00'
       },
       {
         category: '食物',
         name: '阿部蒲鉾店 本店',
-        desc: '仙台商店街的特色魚板小時',
+        desc: '仙台商店街的特色魚板小吃',
         emoji: '🏮',
         highlightText: '炸葫蘆魚板'
       },
@@ -417,13 +430,18 @@ export const ITINERARY_DATA: DayPlan[] = [
         emoji: '✈️',
         highlightText: '提早出發防雪路延誤'
       },
+    ],
+    flights: [
       {
-        time: '16:15',
-        category: '交通',
-        name: '返程航班 ✈️',
-        desc: '回家囉！預計 16:15 起飛。',
-        emoji: '🏠',
-        highlightText: '帶著滿滿回憶回家'
+        type: '回程航班',
+        date: '1/22',
+        departureTime: '16:15',
+        arrivalTime: '19:30',
+        departure: 'SDJ 仙台',
+        arrival: 'TPE T2',
+        flightNumber: 'BR117',
+        aircraft: '長榮航空 BR117',
+        duration: '4h15m'
       }
     ],
     clothingAdvice: '穿脫方便的大衣，應對機場溫度',

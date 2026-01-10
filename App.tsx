@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { ITINERARY_DATA, WEATHER_DATA } from './data';
 import { CATEGORY_COLORS, TAG_COLORS, Icons } from './constants';
 import PackingList from './components/PackingList';
+import FlightCard from './components/FlightCard';
 
 const App: React.FC = () => {
   const [selectedDay, setSelectedDay] = useState<number | 'packing'>(0);
@@ -50,6 +51,11 @@ const App: React.FC = () => {
                 </div>
               </div>
             </div>
+
+            {/* Flight Cards */}
+            {currentDay.flights && currentDay.flights.map((flight, i) => (
+              <FlightCard key={i} flight={flight} />
+            ))}
 
             {/* Spot & Transport List - Clean Layout without Left Margin */}
             <div className="space-y-3">
