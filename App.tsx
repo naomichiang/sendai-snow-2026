@@ -33,12 +33,12 @@ const App: React.FC = () => {
         ) : currentDay && currentDayWeather ? (
           <>
             {/* Weather Card - Static & Compact */}
-            <div className="bg-white rounded-[1.5rem] p-4 shadow-md border border-white/40 mb-3">
+            <div className="bg-white rounded-[1.5rem] p-5 shadow-md border border-white/40 mb-3">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <div className="w-14 h-14 bg-[#F5EFEF] rounded-xl flex items-center justify-center text-2xl shadow-inner">❄️</div>
                   <div>
-                    <h2 className="text-xl font-black text-[#3E2723] leading-none">{currentDay.location}</h2>
+                    <h2 className="text-xl font-black text-[#3E2723] tracking-wide leading-none">{currentDay.location}</h2>
                     <div className="flex gap-1.5 mt-1.5">
                       <span className="text-[12px] bg-blue-50 text-blue-700 px-1.5 py-0.5 rounded-md font-bold">雪 {currentDayWeather.snowChance}</span>
                       <span className="text-[12px] bg-amber-50 text-amber-700 px-1.5 py-0.5 rounded-md font-bold">深 {currentDayWeather.snowDepth}</span>
@@ -99,12 +99,12 @@ const App: React.FC = () => {
                   {/* Content Area - Now Full Width */}
                   <div className="w-full">
                     {/* Title */}
-                    <h3 className="font-semibold text-2xl leading-tight mb-2 text-[#3E2723]/90">
+                    <h3 className="font-semibold text-xl tracking-widest leading-tight mb-2 text-[#3E2723]/90">
                       {spot.name}
                     </h3>
                     
                     {/* Description */}
-                    <p className="text-[15px] text-[#616161] leading-relaxed font-medium mb-3">
+                    <p className="text-[15px] text-[#616161] leading-relaxed font-medium mb-4">
                       {spot.desc}
                     </p>
 
