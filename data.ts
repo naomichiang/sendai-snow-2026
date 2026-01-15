@@ -450,11 +450,11 @@ export const ITINERARY_DATA: DayPlan[] = [
 ];
 
 export const WEATHER_DATA: WeatherDay[] = [
-  { date: '01/16', temp: '-2°C / 4°C', snowChance: '20%', realFeel: '-1°C', snowDepth: '5cm', clothing: '防風大衣', location: '仙台' },
-  { date: '01/17', temp: '-5°C / 1°C', snowChance: '40%', realFeel: '-6°C', snowDepth: '25cm', clothing: '厚羽絨 + 雪靴', location: '白石藏王' },
-  { date: '01/18', temp: '-7°C / -2°C', snowChance: '80%', realFeel: '-10°C', snowDepth: '50cm', clothing: '長版大衣 + 圍巾', location: '銀山' },
-  { date: '01/19', temp: '-10°C / -4°C', snowChance: '90%', realFeel: '-15°C', snowDepth: '80cm', clothing: '滑雪服 + 暖暖包', location: '藏王' },
-  { date: '01/20', temp: '-8°C / -3°C', snowChance: '30%', realFeel: '-12°C', snowDepth: '75cm', clothing: '滑雪裝備', location: '滑雪場' },
-  { date: '01/21', temp: '-3°C / 3°C', snowChance: '10%', realFeel: '0°C', snowDepth: '10cm', clothing: '厚外套', location: '仙台' },
-  { date: '01/22', temp: '-1°C / 5°C', snowChance: '5%', realFeel: '2°C', snowDepth: '2cm', clothing: '羽絨衣', location: '機場' },
+  { date: '01/16', temp: '8°C / -1°C', snowChance: '局部多雲', realFeel: '0°C', snowDepth: '5cm', clothing: '防風大衣', location: '仙台' },
+  { date: '01/17', temp: '9°C / -1°C', snowChance: '局部多雲', realFeel: '0°C', snowDepth: '25cm', clothing: '厚羽絨 + 雪靴', location: '白石藏王' },
+  { date: '01/18', temp: '2°C / -4°C', snowChance: '局部多雲', realFeel: '-1C', snowDepth: '50cm', clothing: '長版大衣 + 圍巾', location: '銀山' },
+  { date: '01/19', temp: '4°C / -2°C', snowChance: '局部多雲', realFeel: '-2°C', snowDepth: '80cm', clothing: '滑雪服 + 暖暖包', location: '藏王' },
+  { date: '01/20', temp: '0°C / -7°C', snowChance: '午前陣雪', realFeel: '-2°C', snowDepth: '75cm', clothing: '滑雪裝備', location: '滑雪場' },
+  { date: '01/21', temp: '-3°C / -9°C', snowChance: '多雲時晴', realFeel: '-2°C', snowDepth: '10cm', clothing: '厚外套', location: '仙台' },
+  { date: '01/22', temp: '1°C / -6°C', snowChance: '局部多雲', realFeel: '-2°C', snowDepth: '2cm', clothing: '羽絨衣', location: '機場' },
 ];

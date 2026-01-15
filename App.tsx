@@ -40,8 +40,7 @@ const App: React.FC = () => {
                   <div>
                     <h2 className="text-xl font-black text-[#3E2723] tracking-widest leading-none">{currentDay.location}</h2>
                     <div className="flex gap-1.5 mt-1.5">
-                      <span className="text-[12px] bg-blue-50 text-blue-700 px-1.5 py-0.5 rounded-md font-bold">雪 {currentDayWeather.snowChance}</span>
-                      <span className="text-[12px] bg-amber-50 text-amber-700 px-1.5 py-0.5 rounded-md font-bold">深 {currentDayWeather.snowDepth}</span>
+                      <span className="text-[12px] bg-blue-50 text-blue-700 px-1.5 py-0.5 rounded-md font-bold">{currentDayWeather.snowChance}</span>
                     </div>
                   </div>
                 </div>
