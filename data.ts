@@ -227,8 +227,8 @@ export const ITINERARY_DATA: DayPlan[] = [
       },
       {
         category: '食物',
-        name: '溫泉飯店晚餐',
-        desc: '溫泉飯店有提供晚餐，連住兩晚應該會不一樣',
+        name: '各自回飯店吃晚餐',
+        desc: '溫泉飯店有提供晚餐，沒有一起住~吃完再出門拍夜景',
         emoji: '🏮',
         highlightText: '一泊二食方案'
       },
@@ -254,7 +254,6 @@ export const ITINERARY_DATA: DayPlan[] = [
         desc: '9:40 接駁 或 10:35尾花澤巴士 (30-40min)',
         mapUrl: 'https://www.google.com/maps/dir/?api=1&origin=Ginzan+Onsen&destination=Oishida+Station',
         emoji: '👋',
-        highlightText: '晨間銀山最後巡禮'
       },
       {
         time: '11:27',
@@ -290,14 +289,14 @@ export const ITINERARY_DATA: DayPlan[] = [
       {
         category: '景點',
         name: '🚠 藏王纜車 ➔ 樹冰',
-        desc: '前幾天先確認天氣並且當天上山前看即時影像，像巨型怪獸般的樹冰，藏王纜車山麓站先搭到樹冰高原站－第二條纜車前往地藏山頂站？',
+        desc: '確認天氣即時影像，看樹冰有兩段不同的纜車(要排兩次)，藏王纜車山麓站先搭到樹冰高原站－第二條纜車前往地藏山頂站',
         tags: ['必拍'],
         mapUrl: 'https://maps.app.goo.gl/aLwyShnX8zndEBnK8',
         emoji: '🚠',
         highlightText: '搶14:00或14:30上山的優先套票，末班車16:30'
       }
     ],
-    clothingAdvice: '最高等級防寒羽絨 + 暖暖包',
+    clothingAdvice: '最高等級防寒羽絨 + 暖暖包 ',
     snowTip: '纜車山頂溫度可能低至 -15°C，臉部保暖也要注意。'
   },
   {
@@ -329,7 +328,7 @@ export const ITINERARY_DATA: DayPlan[] = [
         desc: '一對三教練課，在雪地裡翻滾也是一種樂趣！課程: 9:30 - 12:30，餐廳:10am〜4pm',
         tags: ['必拍'],
         emoji: '🎓',
-        highlightText: '下午留在滑雪場練習'
+        highlightText: '下午留在滑雪場練習，手機記得用手機繩'
       },
       {
         category: '活動',
@@ -349,7 +348,7 @@ export const ITINERARY_DATA: DayPlan[] = [
       }
     ],
     clothingAdvice: '專業滑雪服組 + 護具',
-    snowTip: '滑雪場風大，建議佩戴護目鏡以保護眼睛'
+    snowTip: '滑雪場風大，注意保暖保濕，護唇膏要放身上'
   },
   {
     day: 6,
